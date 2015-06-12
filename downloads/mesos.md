@@ -26,7 +26,6 @@ base: //downloads.mesosphere.io/master
 {% for package in site.data.download_versions %}
 {% if package.name == "mesos" %}
 {% for rel in package.releases %}
-<div id="apache-mesos-{{ rel.release_group }}"></div>
 <table class="table table-striped" id="apache-mesos-{{ rel.name }}">
   <thead>
     <tr>

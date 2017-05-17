@@ -30,12 +30,12 @@ You need to do some cleanup before you can shut down and pacakge ``node1``.  Mak
 properly set to start on boot with ``chkconfig``:
 
 ```
-$ sudo chkconfig zookeeper-server on
-$ sudo chkconfig mesos-master on
-$ sudo chkconfig mesos-slave on
-$ sudo chkconfig marathon on
+[node1]$ sudo chkconfig zookeeper-server on
+[node1]$ sudo chkconfig mesos-master on
+[node1]$ sudo chkconfig mesos-slave on
+[node1]$ sudo chkconfig marathon on
  # if you are running chronos with marathon then do not do this
-$ sudo chkconfig chronos on
+[node1]$ sudo chkconfig chronos on
 ```
 
 Once you do that we need to make a Vagrant box out of it so we can copy it over to our new setup:
@@ -55,7 +55,7 @@ Next you need to add a two node configuration to your ``Vagrantfile``.  The line
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "chef/centos-7.0"
+  config.vm.box = "bento/centos-7.1"
   config.vm.define "node1" do |node1|
       node1.vm.network "private_network", ip: "192.168.33.10"
       node1.vm.hostname = "node1"
@@ -70,7 +70,7 @@ end
 ```
 
 
-Once you have that in your ``Vagrantfile`` you can then do Vagrant up and it will recreate your original Vagrant master from the ``package.box`` file you created naming it ``node1``, and start a new VM named ``node2`` with no configuration in it.
+Once you have that in your ``Vagrantfile`` you can then do ``vagrant up`` and it will recreate your original Vagrant master from the ``package.box`` file you created naming it ``node1``, and start a new VM named ``node2`` with no configuration in it.
 
 Further Study
 -------------

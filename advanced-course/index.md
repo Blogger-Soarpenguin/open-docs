@@ -27,14 +27,14 @@ Module 1: The Beginning
 * [Exercise 11: Scaling To Two Nodes](/advanced-course/scaling-to-two-nodes/)
 * [Exercise 12: Deploying A Web App With Docker](/advanced-course/deploying-a-web-app-using-docker/)
 * [Exercise 13: Distributing Docker To Multiple Nodes](/advanced-course/distributing-docker-to-multiple-nodes/)
-* [Exercise 14: Installing and Using Mesos CLI](/advanced-course/installing-and-using-mesos-cli/)
+* [Exercise 14: Installing and Using DCOS CLI](/advanced-course/installing-and-using-dcos-cli/)
 * [Exercise 15: Starting Four Nodes](/advanced-course/starting-four-nodes/)
 
 Module 2: Advanced Topics
 =========================
 
 * [Exercise 16: Recreating the Cluster Using Ansible](/advanced-course/recreating-the-cluster-using-ansible/)
-* [Exercise 17: Advanced Usage of the Marathon](/advanced-course/advanced-usage-of-the-marathon/)
+* [Exercise 17: Advanced Usage of Marathon](/advanced-course/advanced-usage-of-marathon/)
 * [Exercise 18: Advanced Usage of Chronos](/advanced-course/advanced-usage-of-chronos/)
 * [Exercise 19: Troubleshooting](/advanced-course/troubleshooting/)
 * [Exercise 20: Advanced Cluster Building](/advanced-course/advanced-cluster-building/)
